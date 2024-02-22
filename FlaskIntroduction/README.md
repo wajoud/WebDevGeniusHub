@@ -8,7 +8,14 @@ Flask is a lightweight Python web framework known for its simplicity and flexibi
 - create a virtual environment using >> python -m venv /path/to/your/folder
 - Activate the virtual environment >> source venv/bin/activate 
 - Install the requirements file >> pip3 install -r requirement.txt
-- 
+
+
+
+# data base 
+
+- from app import app , db
+- app.app_context().push()
+- db.create_all()
 
 
 
