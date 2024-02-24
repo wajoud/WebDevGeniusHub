@@ -1,4 +1,4 @@
-table {
+/* table {
     border-collapse: collapse;
     width: 100%;
 }
@@ -7,4 +7,72 @@ th, td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+} */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Arial', sans-serif; /* Modern font */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #ffffff; /* Clean background */
+    margin-top: 20px; /* Add some space at the top of the table */
+}
+
+th, td {
+    border: 1px solid #dddddd; /* Lighter border for a softer look */
+    text-align: left;
+    padding: 15px; /* More padding for a spacious feel */
+    color: #333333; /* Slightly darker font for better readability */
+}
+
+th {
+    background-color: #f2f2f2; /* Different background for headers */
+    color: #333333; /* Dark color for contrast */
+    font-size: 16px; /* Slightly larger font for headers */
+}
+
+td {
+    font-size: 14px; /* Optimal font size for content */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for rows */
+}
+
+/* Add some hover effects for interactivity */
+tr:hover {background-color: #eaeaea;}
+
+/* Style for the Add Task button for uniformity */
+button {
+    background-color: #4CAF50; /* A green color to stand out */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s; /* Smooth transition for mouseover */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+.title {
+    text-align: center;
+}
+
+.action-btn {
+    /* Button styles from the earlier CSS suggestions */
+    background-color: #4CAF50;
+    color: white;
+    /* ... other button styling ... */
+}
+
+/* Additional styles for form submit buttons */
+input[type=submit].action-btn {
+    /* Same button styles */
 }

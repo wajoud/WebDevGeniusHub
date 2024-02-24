@@ -2,7 +2,7 @@
 
 {% block body %}
     <div class="content">
-        <h1 style="text-align: center">Task Master</h1>
+        <h1 class="title">Task Master</h1> <!-- Removed inline styling -->
         <table>
             <thead>
                 <tr>
@@ -16,9 +16,8 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <a href="#">Delete</a>
-                        <br>
-                        <a href="#">Update</a>
+                        <button class="action-btn">Delete</button> <!-- Changed to button -->
+                        <button class="action-btn">Update</button> <!-- Changed to button -->
                     </td>
                 </tr>
                 <!-- Add more rows as needed with actual data -->
@@ -28,7 +27,7 @@
         <div class="form">
             <form action="/" method="POST">
                 <input type="text" name="content" id="content">
-                <input type="submit" value="Add Task">
+                <input type="submit" value="Add Task" class="action-btn"> <!-- Added class -->
             </form>
         </div>
     </div>
