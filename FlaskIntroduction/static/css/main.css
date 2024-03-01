@@ -1,78 +1,75 @@
-/* table {
-    border-collapse: collapse;
-    width: 100%;
+body, html {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f0f4f7;
+    color: #333;
 }
 
-th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-} */
+.content {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
 
 table {
     border-collapse: collapse;
     width: 100%;
-    font-family: 'Arial', sans-serif; /* Modern font */
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    background-color: #ffffff; /* Clean background */
-    margin-top: 20px; /* Add some space at the top of the table */
+    margin-top: 20px;
 }
 
 th, td {
-    border: 1px solid #dddddd; /* Lighter border for a softer look */
+    border: 1px solid #ddd;
+    padding: 8px;
     text-align: left;
-    padding: 15px; /* More padding for a spacious feel */
-    color: #333333; /* Slightly darker font for better readability */
 }
 
 th {
-    background-color: #f2f2f2; /* Different background for headers */
-    color: #333333; /* Dark color for contrast */
-    font-size: 16px; /* Slightly larger font for headers */
+    background-color: #007bff;
+    color: #ffffff;
 }
 
 td {
-    font-size: 14px; /* Optimal font size for content */
+    text-align: center;
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9; /* Zebra striping for rows */
+tr:nth-child(even){background-color: #f2f2f2;}
+
+.form input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-/* Add some hover effects for interactivity */
-tr:hover {background-color: #eaeaea;}
-
-/* Style for the Add Task button for uniformity */
-button {
-    background-color: #4CAF50; /* A green color to stand out */
+.form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
     color: white;
     border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s; /* Smooth transition for mouseover */
+    border-radius: 4px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049; /* Darker shade on hover */
-}
-
-.title {
-    text-align: center;
+.form input[type="submit"]:hover {
+    background-color: #218838;
 }
 
 .action-btn {
-    /* Button styles from the earlier CSS suggestions */
-    background-color: #4CAF50;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #007bff;
     color: white;
-    /* ... other button styling ... */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-/* Additional styles for form submit buttons */
-input[type=submit].action-btn {
-    /* Same button styles */
+.action-btn:hover {
+    background-color: #0056b3;
 }
