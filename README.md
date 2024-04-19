@@ -16,7 +16,7 @@ Our mission is to simplify web development with Python, making it accessible for
 Clone this repository to access the resources:
 
 ```bash
-git clone https://github.com/yourusername/WebDevGeniusHub.git
+git clone https://github.com/wajoud/WebDevGeniusHub.git
 cd WebDevGeniusHub
 ```
 
